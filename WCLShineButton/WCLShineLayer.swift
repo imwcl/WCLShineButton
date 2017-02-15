@@ -85,7 +85,11 @@ class WCLShineLayer: CALayer, CAAnimationDelegate {
     
     private func startFlash() {
         displaylink = CADisplayLink(target: self, selector: #selector(flashAction))
-        displaylink?.preferredFramesPerSecond = 5
+        if #available(iOS 10.0, *) {
+            displaylink?.preferredFramesPerSecond = 6
+        }else {
+            displaylink?.frameInterval = 10
+        }
         displaylink?.add(to: .current, forMode: .commonModes)
     }
     

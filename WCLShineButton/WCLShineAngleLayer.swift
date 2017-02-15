@@ -89,7 +89,11 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
     //MARK: Privater Methods
     private func startFlash() {
         displaylink = CADisplayLink(target: self, selector: #selector(flashAction))
-        displaylink?.preferredFramesPerSecond = 10
+        if #available(iOS 10.0, *) {
+            displaylink?.preferredFramesPerSecond = 10
+        }else {
+            displaylink?.frameInterval = 6
+        }
         displaylink?.add(to: .current, forMode: .commonModes)
     }
     
