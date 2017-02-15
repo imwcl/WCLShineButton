@@ -31,9 +31,9 @@ class WCLShineClickLayer: CALayer {
     
     var fillColor: UIColor = UIColor(rgb: (255, 102, 102))
     
-    var imageName: WCLShineImageName = .heart {
+    var image: WCLShineImage = .heart {
         didSet {
-            maskLayer.contents = imageName.getImage()
+            maskLayer.contents = image.getImage()
         }
     }
     
@@ -68,7 +68,7 @@ class WCLShineClickLayer: CALayer {
         }else {
             backgroundColor = color.cgColor
         }
-        maskLayer.contents = imageName.getImage()?.cgImage
+        maskLayer.contents = image.getImage()?.cgImage
     }
     
     

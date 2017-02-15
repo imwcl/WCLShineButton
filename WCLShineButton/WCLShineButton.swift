@@ -28,26 +28,33 @@ import UIKit
 
 public class WCLShineButton: UIControl {
     
+    /// 更多的配置参数
     public var params: WCLShineParams {
         didSet {
             clickLayer.animDuration          = params.animDuration/3
             shineLayer.params                = params
         }
     }
+    
+    /// 未点击的颜色
     public var color: UIColor       = UIColor.lightGray {
         willSet {
             clickLayer.color = newValue
         }
     }
+    
+    /// 点击后的颜色
     public var fillColor: UIColor   = UIColor(rgb: (255, 102, 102)) {
         willSet {
             clickLayer.fillColor = newValue
             shineLayer.fillColor = newValue
         }
     }
-    public var imageName: WCLShineImageName = .heart {
+    
+    /// button的图片
+    public var image: WCLShineImage = .heart {
         willSet {
-            clickLayer.imageName = newValue
+            clickLayer.image = newValue
         }
     }
     

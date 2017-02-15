@@ -59,7 +59,11 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
             let bigShine = shineLayers[i]
             let bigAnim = getAngleAnim(shine: bigShine, angle: startAngle + CGFloat(angle)*CGFloat(i), radius: radius)
             let smallShine = smallShineLayers[i]
-            let smallAnim = getAngleAnim(shine: smallShine, angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(M_PI)/180, radius: radius-5)
+            var radiusSub = frame.size.width*0.15*0.66
+            if params.shineSize != 0 {
+                radiusSub = params.shineSize*0.66
+            }
+            let smallAnim = getAngleAnim(shine: smallShine, angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(M_PI)/180, radius: radius-radiusSub)
             bigShine.add(bigAnim, forKey: "path")
             smallShine.add(smallAnim, forKey: "path")
             if params.enableFlashing {
@@ -98,7 +102,10 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         let radius = frame.size.width/2 * CGFloat(params.shineDistanceMultiple)
         for i in 0..<params.shineCount {
             let bigShine = CAShapeLayer()
-            let bigWidth = frame.size.width*0.15
+            var bigWidth = frame.size.width*0.15
+            if params.shineSize != 0 {
+                bigWidth = params.shineSize
+            }
             let center = getShineCenter(angle: startAngle + CGFloat(angle)*CGFloat(i), radius: radius)
             let path = UIBezierPath(arcCenter: center, radius: bigWidth, startAngle: 0, endAngle: CGFloat(M_PI)*2, clockwise: false)
             bigShine.path = path.cgPath
@@ -111,7 +118,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
             shineLayers.append(bigShine)
             
             let smallShine = CAShapeLayer()
-            let smallWidth = frame.size.width*0.1
+            let smallWidth = bigWidth*0.66
             let smallCenter = getShineCenter(angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(M_PI)/180, radius: radius-bigWidth)
             let smallPath = UIBezierPath(arcCenter: smallCenter, radius: smallWidth, startAngle: 0, endAngle: CGFloat(M_PI)*2, clockwise: false)
             smallShine.path = smallPath.cgPath

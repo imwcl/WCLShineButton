@@ -45,7 +45,7 @@ public struct WCLShineParams {
     /// 小shine的颜色
     public var smallShineColor: UIColor     = UIColor.lightGray
     /// shine的大小
-    public var shineSize: Int = 0
+    public var shineSize: CGFloat = 0
     /// 随机的颜色列表
     public var colorRandom: [UIColor]       = [UIColor(rgb: (255, 255, 153)),
                                                UIColor(rgb: (255, 204, 204)),
@@ -60,7 +60,7 @@ public struct WCLShineParams {
     public init() {}
 }
 
-public enum WCLShineImageName {
+public enum WCLShineImage {
     case heart
     case like
     case smile

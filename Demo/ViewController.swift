@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         let bt2 = WCLShineButton(frame: .init(x: 200, y: 100, width: 60, height: 60), params: param2)
         bt2.fillColor = UIColor(rgb: (255,95,89))
         bt2.color = UIColor(rgb: (170,170,170))
-        bt2.imageName = .like
+        bt2.image = .like
         bt2.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt2)
         
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         let bt3 = WCLShineButton(frame: .init(x: 300, y: 100, width: 60, height: 60), params: param3)
         bt3.fillColor = UIColor(rgb: (255,41,1))
         bt3.color = UIColor(rgb: (170,170,170))
-        bt3.imageName = .smile
+        bt3.image = .smile
         bt3.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt3)
         
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         let bt4 = WCLShineButton(frame: .init(x: 400, y: 100, width: 60, height: 60), params: param4)
         bt4.fillColor = UIColor(rgb: (167,99,154))
         bt4.color = UIColor(rgb: (170,170,170))
-        bt4.imageName = .star
+        bt4.image = .star
         bt4.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt4)
         
