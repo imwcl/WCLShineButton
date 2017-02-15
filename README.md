@@ -1,7 +1,7 @@
 # WCLShineButton
 This is a UI lib for iOS. Effects like shining.
 
-![](http://imwcl.oss-cn-shanghai.aliyuncs.com/github/WCLShineButton/demo_shine_others.gif)
+![](DemoGif.gif)
 
 #### ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 
 ####[中文说明](README.zh.md)

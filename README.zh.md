@@ -1,7 +1,7 @@
 # WCLShineButton
 类似太阳动画的button
 
-![](http://imwcl.oss-cn-shanghai.aliyuncs.com/github/WCLShineButton/demo_shine_others.gif)
+![](DemoGif.gif)
 
 #### ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 
 ####[英文说明](README.md)
