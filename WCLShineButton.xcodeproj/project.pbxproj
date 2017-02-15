@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9773F9481E547C290011CBEF /* WCLShineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F9471E547C290011CBEF /* WCLShineButton.swift */; };
+		9773F94A1E547C3C0011CBEF /* WCLShineParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F9491E547C3C0011CBEF /* WCLShineParams.swift */; };
+		9773F94C1E547C4D0011CBEF /* WCLShineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F94B1E547C4D0011CBEF /* WCLShineLayer.swift */; };
+		9773F94E1E547C640011CBEF /* WCLShineClickLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F94D1E547C640011CBEF /* WCLShineClickLayer.swift */; };
+		9773F9501E547C750011CBEF /* WCLShineBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F94F1E547C750011CBEF /* WCLShineBundle.swift */; };
+		9773F9521E547C8F0011CBEF /* WCLShineAngleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F9511E547C8F0011CBEF /* WCLShineAngleLayer.swift */; };
+		9773F9541E547CAC0011CBEF /* WCLShineButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9773F9531E547CAC0011CBEF /* WCLShineButton.bundle */; };
+		9773F95C1E547CC20011CBEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F95B1E547CC20011CBEF /* AppDelegate.swift */; };
+		9773F95E1E547CC20011CBEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F95D1E547CC20011CBEF /* ViewController.swift */; };
+		9773F9611E547CC20011CBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9773F95F1E547CC20011CBEF /* Main.storyboard */; };
+		9773F9631E547CC20011CBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9773F9621E547CC20011CBEF /* Assets.xcassets */; };
+		9773F96B1E547CD40011CBEF /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9773F93C1E547C060011CBEF /* WCLShineButton.framework */; };
+		9773F96D1E547ED60011CBEF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9773F96C1E547ED60011CBEF /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9773F93C1E547C060011CBEF /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9773F9401E547C060011CBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9773F9471E547C290011CBEF /* WCLShineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineButton.swift; sourceTree = "<group>"; };
+		9773F9491E547C3C0011CBEF /* WCLShineParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineParams.swift; sourceTree = "<group>"; };
+		9773F94B1E547C4D0011CBEF /* WCLShineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineLayer.swift; sourceTree = "<group>"; };
+		9773F94D1E547C640011CBEF /* WCLShineClickLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineClickLayer.swift; sourceTree = "<group>"; };
+		9773F94F1E547C750011CBEF /* WCLShineBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineBundle.swift; sourceTree = "<group>"; };
+		9773F9511E547C8F0011CBEF /* WCLShineAngleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineAngleLayer.swift; sourceTree = "<group>"; };
+		9773F9531E547CAC0011CBEF /* WCLShineButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WCLShineButton.bundle; sourceTree = "<group>"; };
+		9773F9591E547CC20011CBEF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9773F95B1E547CC20011CBEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9773F95D1E547CC20011CBEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9773F9601E547CC20011CBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9773F9621E547CC20011CBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9773F9671E547CC20011CBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9773F96C1E547ED60011CBEF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9773F9381E547C060011CBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9773F9561E547CC20011CBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9773F96B1E547CD40011CBEF /* WCLShineButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9773F9321E547C060011CBEF = {
+			isa = PBXGroup;
+			children = (
+				9773F93E1E547C060011CBEF /* WCLShineButton */,
+				9773F95A1E547CC20011CBEF /* Demo */,
+				9773F93D1E547C060011CBEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9773F93D1E547C060011CBEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9773F93C1E547C060011CBEF /* WCLShineButton.framework */,
+				9773F9591E547CC20011CBEF /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9773F93E1E547C060011CBEF /* WCLShineButton */ = {
+			isa = PBXGroup;
+			children = (
+				9773F9531E547CAC0011CBEF /* WCLShineButton.bundle */,
+				9773F94F1E547C750011CBEF /* WCLShineBundle.swift */,
+				9773F94D1E547C640011CBEF /* WCLShineClickLayer.swift */,
+				9773F9511E547C8F0011CBEF /* WCLShineAngleLayer.swift */,
+				9773F94B1E547C4D0011CBEF /* WCLShineLayer.swift */,
+				9773F9491E547C3C0011CBEF /* WCLShineParams.swift */,
+				9773F9471E547C290011CBEF /* WCLShineButton.swift */,
+				9773F9401E547C060011CBEF /* Info.plist */,
+			);
+			path = WCLShineButton;
+			sourceTree = "<group>";
+		};
+		9773F95A1E547CC20011CBEF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9773F95B1E547CC20011CBEF /* AppDelegate.swift */,
+				9773F95D1E547CC20011CBEF /* ViewController.swift */,
+				9773F95F1E547CC20011CBEF /* Main.storyboard */,
+				9773F9621E547CC20011CBEF /* Assets.xcassets */,
+				9773F9671E547CC20011CBEF /* Info.plist */,
+				9773F96C1E547ED60011CBEF /* Launch Screen.storyboard */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9773F9391E547C060011CBEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9773F93B1E547C060011CBEF /* WCLShineButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9773F9441E547C060011CBEF /* Build configuration list for PBXNativeTarget "WCLShineButton" */;
+			buildPhases = (
+				9773F9371E547C060011CBEF /* Sources */,
+				9773F9381E547C060011CBEF /* Frameworks */,
+				9773F9391E547C060011CBEF /* Headers */,
+				9773F93A1E547C060011CBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCLShineButton;
+			productName = WCLShineButton;
+			productReference = 9773F93C1E547C060011CBEF /* WCLShineButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9773F9581E547CC20011CBEF /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9773F9681E547CC20011CBEF /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				9773F9551E547CC20011CBEF /* Sources */,
+				9773F9561E547CC20011CBEF /* Frameworks */,
+				9773F9571E547CC20011CBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 9773F9591E547CC20011CBEF /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9773F9331E547C060011CBEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "王崇磊";
+				TargetAttributes = {
+					9773F93B1E547C060011CBEF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 464B6RYLBK;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					9773F9581E547CC20011CBEF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 464B6RYLBK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9773F9361E547C060011CBEF /* Build configuration list for PBXProject "WCLShineButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9773F9321E547C060011CBEF;
+			productRefGroup = 9773F93D1E547C060011CBEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9773F93B1E547C060011CBEF /* WCLShineButton */,
+				9773F9581E547CC20011CBEF /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9773F93A1E547C060011CBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9773F9541E547CAC0011CBEF /* WCLShineButton.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9773F9571E547CC20011CBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9773F96D1E547ED60011CBEF /* Launch Screen.storyboard in Resources */,
+				9773F9631E547CC20011CBEF /* Assets.xcassets in Resources */,
+				9773F9611E547CC20011CBEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9773F9371E547C060011CBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9773F9501E547C750011CBEF /* WCLShineBundle.swift in Sources */,
+				9773F94A1E547C3C0011CBEF /* WCLShineParams.swift in Sources */,
+				9773F94C1E547C4D0011CBEF /* WCLShineLayer.swift in Sources */,
+				9773F9481E547C290011CBEF /* WCLShineButton.swift in Sources */,
+				9773F9521E547C8F0011CBEF /* WCLShineAngleLayer.swift in Sources */,
+				9773F94E1E547C640011CBEF /* WCLShineClickLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9773F9551E547CC20011CBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9773F95E1E547CC20011CBEF /* ViewController.swift in Sources */,
+				9773F95C1E547CC20011CBEF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9773F95F1E547CC20011CBEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9773F9601E547CC20011CBEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9773F9421E547C060011CBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9773F9431E547C060011CBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9773F9451E547C060011CBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 464B6RYLBK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WCLShineButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WCL.WCLShineButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9773F9461E547C060011CBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 464B6RYLBK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WCLShineButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WCL.WCLShineButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9773F9691E547CC20011CBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 464B6RYLBK;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WCL.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9773F96A1E547CC20011CBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 464B6RYLBK;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WCL.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9773F9361E547C060011CBEF /* Build configuration list for PBXProject "WCLShineButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9773F9421E547C060011CBEF /* Debug */,
+				9773F9431E547C060011CBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9773F9441E547C060011CBEF /* Build configuration list for PBXNativeTarget "WCLShineButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9773F9451E547C060011CBEF /* Debug */,
+				9773F9461E547C060011CBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9773F9681E547CC20011CBEF /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9773F9691E547CC20011CBEF /* Debug */,
+				9773F96A1E547CC20011CBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9773F9331E547C060011CBEF /* Project object */;
+}
