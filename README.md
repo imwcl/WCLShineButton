@@ -5,7 +5,7 @@ This is a UI lib for iOS. Effects like shining.
 
 #### ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 
 ####[中文说明](README.zh.md)
-######[博客介绍](http://blog.csdn.net/wang631106979/article/details/55230455）
+######[博客介绍](http://blog.csdn.net/wang631106979/article/details/55230455)
 
 ## Usage
 
