@@ -82,3 +82,11 @@ public enum WCLShineImage {
         }
     }
 }
+
+var isIOS10: Bool {
+    if #available(iOS 10.0, *) {
+        return true
+    }else {
+        return false
+    }
+}
