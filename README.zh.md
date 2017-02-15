@@ -5,7 +5,7 @@
 
 #### ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 
 ####[英文说明](README.md)
-######[博客介绍](http://www.jianshu.com)
+######[博客介绍](http://blog.csdn.net/wang631106979/article/details/55230455)
 
 ## 使用
 
