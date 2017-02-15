@@ -153,7 +153,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         let flash = CABasicAnimation(keyPath: "opacity")
         flash.fromValue = 1
         flash.toValue = 0
-        let duration = Double(arc4random()%20+50)/1000
+        let duration = Double(arc4random()%20+60)/1000
         flash.duration = duration
         flash.repeatCount = MAXFLOAT
         flash.isRemovedOnCompletion = false
