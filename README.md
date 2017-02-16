@@ -14,6 +14,24 @@ This is a UI lib for iOS. Effects like shining.
 ####[中文说明](README.zh.md)
 ######[博客介绍](http://blog.csdn.net/wang631106979/article/details/55230455)
 
+## **CocoaPods**
+
+CocoaPods is the recommended way to add `WCLShineButton` to your project.
+
+Add a pod entry for `WCLShineButton` to your Podfile.
+
+```
+pod 'WCLShineButton'
+```
+
+Second, install `WCLShineButton` into your project:
+
+```
+pod install
+```
+
+Include WCLShineButton wherever you need it with `import WCLShineButton`.
+
 ## Usage
 
 ```swift

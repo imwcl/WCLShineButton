@@ -13,6 +13,14 @@
 ####[英文说明](README.md)
 ######[博客介绍](http://blog.csdn.net/wang631106979/article/details/55230455)
 
+## **CocoaPods**
+
+推荐使用 CocoaPods 安装。
+
+1. 在 Podfile 中添加 `pod 'WCLShineButton'`。
+2. 执行 `pod install` 或 `pod update`。
+3. 导入 `WCLShineButton`。
+
 ## 使用
 
 ```swift
