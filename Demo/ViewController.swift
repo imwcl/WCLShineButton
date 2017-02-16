@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Demo
 //
-//  Created by 王崇磊 on 2017/2/15.
+//  Created by 王崇磊 on 2017/2/16.
 //  Copyright © 2017年 王崇磊. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import WCLShineButton
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @objc private func action() {
         print("点击")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

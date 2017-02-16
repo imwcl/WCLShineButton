@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9721D6181E5576D9003C31EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721D6171E5576D9003C31EF /* AppDelegate.swift */; };
+		9721D61A1E5576D9003C31EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721D6191E5576D9003C31EF /* ViewController.swift */; };
+		9721D61D1E5576D9003C31EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9721D61B1E5576D9003C31EF /* Main.storyboard */; };
+		9721D61F1E5576D9003C31EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9721D61E1E5576D9003C31EF /* Assets.xcassets */; };
+		9721D6281E55771D003C31EF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9721D6271E55771D003C31EF /* Launch Screen.storyboard */; };
+		9721D6291E5577E2003C31EF /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9773F93C1E547C060011CBEF /* WCLShineButton.framework */; };
+		9721D62C1E557A4C003C31EF /* WCLShineButton.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9773F93C1E547C060011CBEF /* WCLShineButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		973E6C0E1E556EEF0004A84D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973E6C0D1E556EEF0004A84D /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9773F9481E547C290011CBEF /* WCLShineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F9471E547C290011CBEF /* WCLShineButton.swift */; };
 		9773F94A1E547C3C0011CBEF /* WCLShineParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F9491E547C3C0011CBEF /* WCLShineParams.swift */; };
 		9773F94C1E547C4D0011CBEF /* WCLShineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F94B1E547C4D0011CBEF /* WCLShineLayer.swift */; };
@@ -14,15 +22,31 @@
 		9773F9501E547C750011CBEF /* WCLShineBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F94F1E547C750011CBEF /* WCLShineBundle.swift */; };
 		9773F9521E547C8F0011CBEF /* WCLShineAngleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F9511E547C8F0011CBEF /* WCLShineAngleLayer.swift */; };
 		9773F9541E547CAC0011CBEF /* WCLShineButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9773F9531E547CAC0011CBEF /* WCLShineButton.bundle */; };
-		9773F95C1E547CC20011CBEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F95B1E547CC20011CBEF /* AppDelegate.swift */; };
-		9773F95E1E547CC20011CBEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773F95D1E547CC20011CBEF /* ViewController.swift */; };
-		9773F9611E547CC20011CBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9773F95F1E547CC20011CBEF /* Main.storyboard */; };
-		9773F9631E547CC20011CBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9773F9621E547CC20011CBEF /* Assets.xcassets */; };
-		9773F96B1E547CD40011CBEF /* WCLShineButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9773F93C1E547C060011CBEF /* WCLShineButton.framework */; };
-		9773F96D1E547ED60011CBEF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9773F96C1E547ED60011CBEF /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9721D62B1E557A3B003C31EF /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9721D62C1E557A4C003C31EF /* WCLShineButton.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9721D6151E5576D8003C31EF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9721D6171E5576D9003C31EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9721D6191E5576D9003C31EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9721D61C1E5576D9003C31EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9721D61E1E5576D9003C31EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9721D6231E5576D9003C31EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9721D6271E55771D003C31EF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		973E6C0D1E556EEF0004A84D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9773F93C1E547C060011CBEF /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9773F9401E547C060011CBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9773F9471E547C290011CBEF /* WCLShineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineButton.swift; sourceTree = "<group>"; };
@@ -32,40 +56,56 @@
 		9773F94F1E547C750011CBEF /* WCLShineBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineBundle.swift; sourceTree = "<group>"; };
 		9773F9511E547C8F0011CBEF /* WCLShineAngleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLShineAngleLayer.swift; sourceTree = "<group>"; };
 		9773F9531E547CAC0011CBEF /* WCLShineButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WCLShineButton.bundle; sourceTree = "<group>"; };
-		9773F9591E547CC20011CBEF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9773F95B1E547CC20011CBEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9773F95D1E547CC20011CBEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9773F9601E547CC20011CBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9773F9621E547CC20011CBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9773F9671E547CC20011CBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9773F96C1E547ED60011CBEF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9721D6121E5576D8003C31EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9721D6291E5577E2003C31EF /* WCLShineButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9773F9381E547C060011CBEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9773F9561E547CC20011CBEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9773F96B1E547CD40011CBEF /* WCLShineButton.framework in Frameworks */,
+				973E6C0E1E556EEF0004A84D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9721D6161E5576D9003C31EF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9721D6171E5576D9003C31EF /* AppDelegate.swift */,
+				9721D6191E5576D9003C31EF /* ViewController.swift */,
+				9721D61B1E5576D9003C31EF /* Main.storyboard */,
+				9721D61E1E5576D9003C31EF /* Assets.xcassets */,
+				9721D6231E5576D9003C31EF /* Info.plist */,
+				9721D6271E55771D003C31EF /* Launch Screen.storyboard */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		973E6C0C1E556EEF0004A84D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				973E6C0D1E556EEF0004A84D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9773F9321E547C060011CBEF = {
 			isa = PBXGroup;
 			children = (
 				9773F93E1E547C060011CBEF /* WCLShineButton */,
-				9773F95A1E547CC20011CBEF /* Demo */,
+				9721D6161E5576D9003C31EF /* Demo */,
 				9773F93D1E547C060011CBEF /* Products */,
+				973E6C0C1E556EEF0004A84D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9773F93C1E547C060011CBEF /* WCLShineButton.framework */,
-				9773F9591E547CC20011CBEF /* Demo.app */,
+				9721D6151E5576D8003C31EF /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,19 +133,6 @@
 			path = WCLShineButton;
 			sourceTree = "<group>";
 		};
-		9773F95A1E547CC20011CBEF /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				9773F95B1E547CC20011CBEF /* AppDelegate.swift */,
-				9773F95D1E547CC20011CBEF /* ViewController.swift */,
-				9773F95F1E547CC20011CBEF /* Main.storyboard */,
-				9773F9621E547CC20011CBEF /* Assets.xcassets */,
-				9773F9671E547CC20011CBEF /* Info.plist */,
-				9773F96C1E547ED60011CBEF /* Launch Screen.storyboard */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -119,6 +146,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9721D6141E5576D8003C31EF /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9721D6241E5576D9003C31EF /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				9721D6111E5576D8003C31EF /* Sources */,
+				9721D6121E5576D8003C31EF /* Frameworks */,
+				9721D6131E5576D8003C31EF /* Resources */,
+				9721D62B1E557A3B003C31EF /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 9721D6151E5576D8003C31EF /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9773F93B1E547C060011CBEF /* WCLShineButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9773F9441E547C060011CBEF /* Build configuration list for PBXNativeTarget "WCLShineButton" */;
@@ -137,23 +182,6 @@
 			productReference = 9773F93C1E547C060011CBEF /* WCLShineButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9773F9581E547CC20011CBEF /* Demo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9773F9681E547CC20011CBEF /* Build configuration list for PBXNativeTarget "Demo" */;
-			buildPhases = (
-				9773F9551E547CC20011CBEF /* Sources */,
-				9773F9561E547CC20011CBEF /* Frameworks */,
-				9773F9571E547CC20011CBEF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Demo;
-			productName = Demo;
-			productReference = 9773F9591E547CC20011CBEF /* Demo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,15 +192,15 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "王崇磊";
 				TargetAttributes = {
+					9721D6141E5576D8003C31EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 464B6RYLBK;
+						ProvisioningStyle = Automatic;
+					};
 					9773F93B1E547C060011CBEF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 464B6RYLBK;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
-					};
-					9773F9581E547CC20011CBEF = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 464B6RYLBK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -191,12 +219,22 @@
 			projectRoot = "";
 			targets = (
 				9773F93B1E547C060011CBEF /* WCLShineButton */,
-				9773F9581E547CC20011CBEF /* Demo */,
+				9721D6141E5576D8003C31EF /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9721D6131E5576D8003C31EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9721D6281E55771D003C31EF /* Launch Screen.storyboard in Resources */,
+				9721D61F1E5576D9003C31EF /* Assets.xcassets in Resources */,
+				9721D61D1E5576D9003C31EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9773F93A1E547C060011CBEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,19 +243,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9773F9571E547CC20011CBEF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9773F96D1E547ED60011CBEF /* Launch Screen.storyboard in Resources */,
-				9773F9631E547CC20011CBEF /* Assets.xcassets in Resources */,
-				9773F9611E547CC20011CBEF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9721D6111E5576D8003C31EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9721D61A1E5576D9003C31EF /* ViewController.swift in Sources */,
+				9721D6181E5576D9003C31EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9773F9371E547C060011CBEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,22 +268,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9773F9551E547CC20011CBEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9773F95E1E547CC20011CBEF /* ViewController.swift in Sources */,
-				9773F95C1E547CC20011CBEF /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9773F95F1E547CC20011CBEF /* Main.storyboard */ = {
+		9721D61B1E5576D9003C31EF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9773F9601E547CC20011CBEF /* Base */,
+				9721D61C1E5576D9003C31EF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -254,6 +282,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9721D6251E5576D9003C31EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 464B6RYLBK;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WCL.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9721D6261E5576D9003C31EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 464B6RYLBK;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WCL.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		9773F9421E547C060011CBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,37 +452,17 @@
 			};
 			name = Release;
 		};
-		9773F9691E547CC20011CBEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 464B6RYLBK;
-				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WCL.Demo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		9773F96A1E547CC20011CBEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 464B6RYLBK;
-				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WCL.Demo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9721D6241E5576D9003C31EF /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9721D6251E5576D9003C31EF /* Debug */,
+				9721D6261E5576D9003C31EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9773F9361E547C060011CBEF /* Build configuration list for PBXProject "WCLShineButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -441,15 +477,6 @@
 			buildConfigurations = (
 				9773F9451E547C060011CBEF /* Debug */,
 				9773F9461E547C060011CBEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9773F9681E547CC20011CBEF /* Build configuration list for PBXNativeTarget "Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9773F9691E547CC20011CBEF /* Debug */,
-				9773F96A1E547CC20011CBEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
