@@ -20,13 +20,13 @@ CocoaPods is the recommended way to add `WCLShineButton` to your project.
 
 Add a pod entry for `WCLShineButton` to your Podfile.
 
-```
+```ruby
 pod 'WCLShineButton'
 ```
 
 Second, install `WCLShineButton` into your project:
 
-```
+```bash
 pod install
 ```
 
@@ -47,22 +47,22 @@ view.addSubview(bt1)
 
 ## **Complex Usage**
 
-| **Property**          | **Description**                          |
-| --------------------- | ---------------------------------------- |
-| color                 | Default button color                     |
-| fillColor             | Fill button color                        |
-| allowRandomColor      | Allow shine color random                 |
-| animDuration          | shine anim duration                      |
-| bigShineColor         | big shine color                          |
-| enableFlashing        | Enable effect like flash                 |
-| shineCount            | shine count around button                |
-| shineTurnAngle        | turn angle of shine                      |
-| shineDistanceMultiple | multiple of distance to button           |
-| smallShineOffsetAngle | angle offset of small shine to big shine |
-| smallShineColor       | small shine color                        |
-| shineSize             | size of shine by pixel                   |
-| colorRandom           | shine color random                       |
-| image                 | button image (png)                       |
+| **Property**            | **Description**                          |
+| ----------------------- | ---------------------------------------- |
+| `color`                 | Default button color                     |
+| `fillColor`             | Fill button color                        |
+| `allowRandomColor`      | Allow shine color random                 |
+| `animDuration`          | shine anim duration                      |
+| `bigShineColor`         | big shine color                          |
+| `enableFlashing`        | Enable effect like flash                 |
+| `shineCount`            | shine count around button                |
+| `shineTurnAngle`        | turn angle of shine                      |
+| `shineDistanceMultiple` | multiple of distance to button           |
+| `smallShineOffsetAngle` | angle offset of small shine to big shine |
+| `smallShineColor`       | small shine color                        |
+| `shineSize`             | size of shine by pixel                   |
+| `colorRandom`           | shine color random                       |
+| `image`                 | button image (png)                       |
 
 ## **Contacts**
 
