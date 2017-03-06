@@ -31,13 +31,13 @@ public class WCLShineButton: UIControl {
     /// 更多的配置参数
     public var params: WCLShineParams {
         didSet {
-            clickLayer.animDuration          = params.animDuration/3
-            shineLayer.params                = params
+            clickLayer.animDuration = params.animDuration/3
+            shineLayer.params       = params
         }
     }
     
     /// 未点击的颜色
-    public var color: UIColor       = UIColor.lightGray {
+    public var color: UIColor = UIColor.lightGray {
         willSet {
             clickLayer.color = newValue
         }
@@ -55,6 +55,13 @@ public class WCLShineButton: UIControl {
     public var image: WCLShineImage = .heart {
         willSet {
             clickLayer.image = newValue
+        }
+    }
+    
+    /// 是否点击的状态
+    public override var isSelected: Bool {
+        didSet {
+            clickLayer.clicked = isSelected
         }
     }
     
@@ -90,10 +97,12 @@ public class WCLShineButton: UIControl {
             shineLayer.endAnim = { [weak self] in
                 self?.clickLayer.clicked = !(self?.clickLayer.clicked ?? false)
                 self?.clickLayer.startAnim()
+                self?.isSelected = self?.clickLayer.clicked ?? false
             }
             shineLayer.startAnim()
         }else {
             clickLayer.clicked = !clickLayer.clicked
+            isSelected = clickLayer.clicked
         }
     }
     

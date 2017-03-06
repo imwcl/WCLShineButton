@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         param1.bigShineColor = UIColor(rgb: (153,152,38))
         param1.smallShineColor = UIColor(rgb: (102,102,102))
         let bt1 = WCLShineButton(frame: .init(x: 100, y: 100, width: 60, height: 60), params: param1)
+        bt1.isSelected = true
         bt1.fillColor = UIColor(rgb: (153,152,38))
         bt1.color = UIColor(rgb: (170,170,170))
         bt1.addTarget(self, action: #selector(action), for: .touchUpInside)
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         var param3 = WCLShineParams()
         param3.allowRandomColor = true
         let bt3 = WCLShineButton(frame: .init(x: 300, y: 100, width: 60, height: 60), params: param3)
+        bt3.isSelected = true
         bt3.fillColor = UIColor(rgb: (255,41,1))
         bt3.color = UIColor(rgb: (170,170,170))
         bt3.image = .smile
