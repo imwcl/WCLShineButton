@@ -37,21 +37,21 @@ view.addSubview(bt1)
 ## **详细使用**
 
 | **属性**                | **描述**         |
-| --------------------- | -------------- |
-| color                 | button的默认颜色    |
-| fillColor             | button的填充颜色    |
-| allowRandomColor      | 允许shine的颜色随机   |
-| animDuration          | 动画的时间         |
-| bigShineColor         | 大太阳的颜色         |
-| enableFlashing        | 是否需要flash的效果   |
-| shineCount            | 太阳的个数          |
-| shineTurnAngle        | 太阳的旋转角度        |
-| shineDistanceMultiple | 太阳的扩散范围        |
-| smallShineOffsetAngle | 小太阳和大太阳之前的偏移角度 |
-| smallShineColor       | 小太阳的颜色         |
-| shineSize             | 大太阳的半径         |
-| colorRandom           | 太阳的颜色的数组       |
-| image                 | button的image   |
+| ----------------------- | -------------- |
+| `color`                 | button的默认颜色    |
+| `fillColor`             | button的填充颜色    |
+| `allowRandomColor`      | 允许shine的颜色随机   |
+| `animDuration`          | 动画的时间         |
+| `bigShineColor`         | 大太阳的颜色         |
+| `enableFlashing`        | 是否需要flash的效果   |
+| `shineCount`            | 太阳的个数          |
+| `shineTurnAngle`        | 太阳的旋转角度        |
+| `shineDistanceMultiple` | 太阳的扩散范围        |
+| `smallShineOffsetAngle` | 小太阳和大太阳之前的偏移角度 |
+| `smallShineColor`       | 小太阳的颜色         |
+| `shineSize`             | 大太阳的半径         |
+| `colorRandom`           | 太阳的颜色的数组       |
+| `image`                 | button的image   |
 
 ## **联系我**
 
