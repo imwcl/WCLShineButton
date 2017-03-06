@@ -9,13 +9,13 @@
 Pod::Spec.new do |s|
 
   s.name          = "WCLShineButton"
-  s.version       = "1.0.0"
+  s.version       = "1.0.1"
   s.summary       = "This is a UI lib for iOS. Effects like shining."
   s.homepage      = "https://github.com/631106979/WCLShineButton"
   s.license       = 'MIT'
   s.author        = { "W_C__L" => "wangchonglei93@icloud.com" }
   s.platform      = :ios, "9.0" 
-  s.source        = { :git => "https://github.com/631106979/WCLShineButton.git", :tag => "1.0.0" }
+  s.source        = { :git => "https://github.com/631106979/WCLShineButton.git", :tag => "1.0.1" }
   s.source_files  = 'WCLShineButton/*.{swift}'
   s.resources     = 'WCLShineButton/WCLShineButton.bundle'
   s.frameworks    = "UIKit"
