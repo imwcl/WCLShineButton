@@ -36,12 +36,12 @@ view.addSubview(bt1)
 
 ## **详细使用**
 
-| **属性**                | **描述**         |
+| **属性**                  | **描述**         |
 | ----------------------- | -------------- |
 | `color`                 | button的默认颜色    |
 | `fillColor`             | button的填充颜色    |
 | `allowRandomColor`      | 允许shine的颜色随机   |
-| `animDuration`          | 动画的时间         |
+| `animDuration`          | 动画的时间         |
 | `bigShineColor`         | 大太阳的颜色         |
 | `enableFlashing`        | 是否需要flash的效果   |
 | `shineCount`            | 太阳的个数          |
