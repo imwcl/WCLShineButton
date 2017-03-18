@@ -21,6 +21,14 @@
 2. 执行 `pod install` 或 `pod update`。
 3. 导入 `WCLShineButton`。
 
+## Carthage
+
+使用Carthage安装
+
+1. 在`Cartfile`中添加`github "631106979/WCLShineButton"`
+2. 执行`carthage update`
+3. 导入`WCLShineButton.framework`
+
 ## 使用
 
 ```swift
@@ -41,7 +49,7 @@ view.addSubview(bt1)
 | `color`                 | button的默认颜色    |
 | `fillColor`             | button的填充颜色    |
 | `allowRandomColor`      | 允许shine的颜色随机   |
-| `animDuration`          | 动画的时间         |
+| `animDuration`          | 动画的时间          |
 | `bigShineColor`         | 大太阳的颜色         |
 | `enableFlashing`        | 是否需要flash的效果   |
 | `shineCount`            | 太阳的个数          |

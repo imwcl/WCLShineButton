@@ -32,6 +32,16 @@ pod install
 
 Include WCLShineButton wherever you need it with `import WCLShineButton`.
 
+## Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate `WCLShineButton` into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```
+github "631106979/WCLShineButton"
+```
+
+Run `carthage update` to build the framework and drag the built `WCLShineButton.framework` (in Carthage/Build/iOS folder) into your Xcode project (Linked Frameworks and Libraries in `Targets`).
+
 ## Usage
 
 ```swift
