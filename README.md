@@ -6,7 +6,7 @@
 ![Language](https://img.shields.io/badge/Language-%20swift%20%20-blue.svg)
 
 
-This is a UI lib for iOS. Effects like shining.
+This is a UI lib for iOS. Effects like shining. 
 
 ![](DemoGif.gif)
 
