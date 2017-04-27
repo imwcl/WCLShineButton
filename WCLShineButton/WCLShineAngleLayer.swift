@@ -51,9 +51,9 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
     public func startAnim() {
         let radius = frame.size.width/2 * CGFloat(params.shineDistanceMultiple*1.4)
         var startAngle: CGFloat = 0
-        let angle = CGFloat(M_PI*2/Double(params.shineCount)) + startAngle
+        let angle = CGFloat(Double.pi*2/Double(params.shineCount)) + startAngle
         if params.shineCount%2 != 0 {
-            startAngle = CGFloat(M_PI*2 - (Double(angle)/Double(params.shineCount)))
+            startAngle = CGFloat(Double.pi*2 - (Double(angle)/Double(params.shineCount)))
         }
         for i in 0..<params.shineCount {
             let bigShine = shineLayers[i]
@@ -63,7 +63,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
             if params.shineSize != 0 {
                 radiusSub = params.shineSize*0.66
             }
-            let smallAnim = getAngleAnim(shine: smallShine, angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(M_PI)/180, radius: radius-radiusSub)
+            let smallAnim = getAngleAnim(shine: smallShine, angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(Double.pi)/180, radius: radius-radiusSub)
             bigShine.add(bigAnim, forKey: "path")
             smallShine.add(smallAnim, forKey: "path")
             if params.enableFlashing {
@@ -78,7 +78,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         angleAnim.duration = params.animDuration * 0.87
         angleAnim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         angleAnim.fromValue = 0
-        angleAnim.toValue = CGFloat(params.shineTurnAngle)*CGFloat(M_PI)/180
+        angleAnim.toValue = CGFloat(params.shineTurnAngle)*CGFloat(Double.pi)/180
         angleAnim.delegate = self
         add(angleAnim, forKey: "rotate")
         if params.enableFlashing {
@@ -99,9 +99,9 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
     
     private func addShines() {
         var startAngle: CGFloat = 0
-        let angle = CGFloat(M_PI*2/Double(params.shineCount)) + startAngle
+        let angle = CGFloat(Double.pi*2/Double(params.shineCount)) + startAngle
         if params.shineCount%2 != 0 {
-            startAngle = CGFloat(M_PI*2 - (Double(angle)/Double(params.shineCount)))
+            startAngle = CGFloat(Double.pi*2 - (Double(angle)/Double(params.shineCount)))
         }
         let radius = frame.size.width/2 * CGFloat(params.shineDistanceMultiple)
         for i in 0..<params.shineCount {
@@ -111,7 +111,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
                 bigWidth = params.shineSize
             }
             let center = getShineCenter(angle: startAngle + CGFloat(angle)*CGFloat(i), radius: radius)
-            let path = UIBezierPath(arcCenter: center, radius: bigWidth, startAngle: 0, endAngle: CGFloat(M_PI)*2, clockwise: false)
+            let path = UIBezierPath(arcCenter: center, radius: bigWidth, startAngle: 0, endAngle: CGFloat(Double.pi)*2, clockwise: false)
             bigShine.path = path.cgPath
             if params.allowRandomColor {
                 bigShine.fillColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
@@ -123,8 +123,8 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
             
             let smallShine = CAShapeLayer()
             let smallWidth = bigWidth*0.66
-            let smallCenter = getShineCenter(angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(M_PI)/180, radius: radius-bigWidth)
-            let smallPath = UIBezierPath(arcCenter: smallCenter, radius: smallWidth, startAngle: 0, endAngle: CGFloat(M_PI)*2, clockwise: false)
+            let smallCenter = getShineCenter(angle: startAngle + CGFloat(angle)*CGFloat(i) - CGFloat(params.smallShineOffsetAngle)*CGFloat(Double.pi)/180, radius: radius-bigWidth)
+            let smallPath = UIBezierPath(arcCenter: smallCenter, radius: smallWidth, startAngle: 0, endAngle: CGFloat(Double.pi)*2, clockwise: false)
             smallShine.path = smallPath.cgPath
             if params.allowRandomColor {
                 smallShine.fillColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
@@ -141,7 +141,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         anim.duration = params.animDuration * 0.87
         anim.fromValue = shine.path
         let center = getShineCenter(angle: angle, radius: radius)
-        let path = UIBezierPath(arcCenter: center, radius: 0.1, startAngle: 0, endAngle: CGFloat(M_PI)*2, clockwise: false)
+        let path = UIBezierPath(arcCenter: center, radius: 0.1, startAngle: 0, endAngle: CGFloat(Double.pi)*2, clockwise: false)
         anim.toValue = path.cgPath
         anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         anim.isRemovedOnCompletion = false
@@ -166,16 +166,16 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         let cenx = bounds.midX
         let ceny = bounds.midY
         var multiple: Int = 0
-        if (angle >= 0 && angle <= CGFloat(90 * M_PI/180)) {
+        if (angle >= 0 && angle <= CGFloat(90 * Double.pi/180)) {
             multiple = 1
-        }else if (angle <= CGFloat(M_PI) && angle > CGFloat(90 * M_PI/180)) {
+        }else if (angle <= CGFloat(Double.pi) && angle > CGFloat(90 * Double.pi/180)) {
             multiple = 2
-        }else if (angle > CGFloat(M_PI) && angle <= CGFloat(270 * M_PI/180)) {
+        }else if (angle > CGFloat(Double.pi) && angle <= CGFloat(270 * Double.pi/180)) {
             multiple = 3
         }else {
             multiple = 4
         }
-        let resultAngel = CGFloat(multiple)*CGFloat(90 * M_PI/180) - angle
+        let resultAngel = CGFloat(multiple)*CGFloat(90 * Double.pi/180) - angle
         let a = sin(resultAngel)*radius
         let b = cos(resultAngel)*radius
         if (multiple == 1) {
