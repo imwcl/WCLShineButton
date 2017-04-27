@@ -33,7 +33,7 @@ class WCLShineClickLayer: CALayer {
     
     var image: WCLShineImage = .heart {
         didSet {
-            maskLayer.contents = image.getImage()
+            maskLayer.contents = image.getImage()?.cgImage
         }
     }
     
