@@ -114,7 +114,8 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
             let path = UIBezierPath(arcCenter: center, radius: bigWidth, startAngle: 0, endAngle: CGFloat(Double.pi)*2, clockwise: false)
             bigShine.path = path.cgPath
             if params.allowRandomColor {
-                bigShine.fillColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
+                let index = Int(arc4random()%UInt32(params.colorRandom.count))
+                bigShine.fillColor = params.colorRandom[index].cgColor
             }else {
                 bigShine.fillColor = params.bigShineColor.cgColor
             }
@@ -127,7 +128,8 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
             let smallPath = UIBezierPath(arcCenter: smallCenter, radius: smallWidth, startAngle: 0, endAngle: CGFloat(Double.pi)*2, clockwise: false)
             smallShine.path = smallPath.cgPath
             if params.allowRandomColor {
-                smallShine.fillColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
+                let index = Int(arc4random()%UInt32(params.colorRandom.count))
+                smallShine.fillColor = params.colorRandom[index].cgColor
             }else {
                 smallShine.fillColor = params.smallShineColor.cgColor
             }
@@ -193,8 +195,10 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         for i in 0..<params.shineCount {
             let bigShine = shineLayers[i]
             let smallShine = smallShineLayers[i]
-            bigShine.fillColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
-            smallShine.fillColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
+            let index1 = Int(arc4random()%UInt32(params.colorRandom.count))
+            bigShine.fillColor = params.colorRandom[index1].cgColor
+            let index2 = Int(arc4random()%UInt32(params.colorRandom.count))
+            smallShine.fillColor = params.colorRandom[index2].cgColor
         }
     }
     

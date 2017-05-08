@@ -94,7 +94,8 @@ class WCLShineLayer: CALayer, CAAnimationDelegate {
     }
     
     @objc private func flashAction() {
-        shapeLayer.strokeColor = params.colorRandom[Int(arc4random())%params.colorRandom.count].cgColor
+        let index = Int(arc4random()%UInt32(params.colorRandom.count))
+        shapeLayer.strokeColor = params.colorRandom[index].cgColor
     }
     
     //MARK: CAAnimationDelegate
