@@ -52,7 +52,7 @@ class WCLShineClickLayer: CALayer {
     let maskLayer = CALayer()
     
     //MARK: Public Methods
-    public func startAnim() {
+    func startAnim() {
         let anim = CAKeyframeAnimation(keyPath: "transform.scale")
         anim.duration  = animDuration
         anim.values = [0.4, 1, 0.9, 1]

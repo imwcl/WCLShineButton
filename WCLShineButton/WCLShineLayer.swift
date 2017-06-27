@@ -42,7 +42,7 @@ class WCLShineLayer: CALayer, CAAnimationDelegate {
     var endAnim: (()->Void)?
     
     //MARK: Public Methods
-    public func startAnim() {
+    func startAnim() {
         let anim = CAKeyframeAnimation(keyPath: "path")
         anim.duration = params.animDuration * 0.1
         let size = frame.size

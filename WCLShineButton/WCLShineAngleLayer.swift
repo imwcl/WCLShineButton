@@ -48,7 +48,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
     }
     
     //MARK: Public Methods
-    public func startAnim() {
+    func startAnim() {
         let radius = frame.size.width/2 * CGFloat(params.shineDistanceMultiple*1.4)
         var startAngle: CGFloat = 0
         let angle = CGFloat(Double.pi*2/Double(params.shineCount)) + startAngle
