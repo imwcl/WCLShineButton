@@ -100,6 +100,7 @@ public class WCLShineButton: UIControl {
                     self?.clickLayer.startAnim()
                 }
                 self?.isSelected = clicked
+                self?.sendActions(for: .valueChanged)
             }
             if animated {
                 shineLayer.startAnim()
@@ -109,6 +110,7 @@ public class WCLShineButton: UIControl {
         } else {
             clickLayer.clicked = !clickLayer.clicked
             isSelected = clickLayer.clicked
+            sendActions(for: .valueChanged)
         }
         
     }
@@ -121,11 +123,13 @@ public class WCLShineButton: UIControl {
                 self?.clickLayer.clicked = !(self?.clickLayer.clicked ?? false)
                 self?.clickLayer.startAnim()
                 self?.isSelected = self?.clickLayer.clicked ?? false
+                self?.sendActions(for: .valueChanged)
             }
             shineLayer.startAnim()
         }else {
             clickLayer.clicked = !clickLayer.clicked
             isSelected = clickLayer.clicked
+            sendActions(for: .valueChanged)
         }
     }
     
