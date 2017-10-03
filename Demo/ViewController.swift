@@ -11,6 +11,8 @@ import WCLShineButton
 
 class ViewController: UIViewController {
     
+    private var allButtons:[WCLShineButton] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
         bt1.color = UIColor(rgb: (170,170,170))
         bt1.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt1)
+        allButtons.append(bt1)
         
         var param2 = WCLShineParams()
         param2.bigShineColor = UIColor(rgb: (255,95,89))
@@ -36,6 +39,7 @@ class ViewController: UIViewController {
         bt2.image = .like
         bt2.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt2)
+        allButtons.append(bt2)
         
         var param3 = WCLShineParams()
         param3.allowRandomColor = true
@@ -46,6 +50,7 @@ class ViewController: UIViewController {
         bt3.image = .smile
         bt3.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt3)
+        allButtons.append(bt3)
         
         var param4 = WCLShineParams()
         param4.enableFlashing = true
@@ -55,7 +60,25 @@ class ViewController: UIViewController {
         bt4.image = .star
         bt4.addTarget(self, action: #selector(action), for: .touchUpInside)
         view.addSubview(bt4)
+        allButtons.append(bt4)
         
+        let toggleAllButton = UIButton(type: .custom)
+        toggleAllButton.frame = .init(x: 100, y: 200, width: 100, height: 60)
+        toggleAllButton.setTitleColor(.black, for: .normal)
+        toggleAllButton.setTitle("Toggle All", for: .normal)
+        toggleAllButton.backgroundColor = UIColor(rgb: (170,170,170))
+        toggleAllButton.addTarget(self, action: #selector(clickAll), for: .touchUpInside)
+        view.addSubview(toggleAllButton)
+    }
+    
+    @objc private func clickAll() {
+        var delay = 0.0
+        for btn in allButtons {
+            DispatchQueue.main.asyncAfter(deadline: .now()+delay, execute: {
+                btn.setClicked(!btn.isSelected, animated: true)
+            })
+            delay += 0.25
+        }
     }
     
     @objc private func action() {
