@@ -107,8 +107,8 @@ public class WCLShineButton: UIControl {
                 shineLayer.endAnim?()
             }
         } else {
-            clickLayer.clicked = !clickLayer.clicked
-            isSelected = clickLayer.clicked
+            clickLayer.clicked = clicked
+            isSelected = clicked
         }
         
     }
