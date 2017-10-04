@@ -100,7 +100,6 @@ public class WCLShineButton: UIControl {
                     self?.clickLayer.startAnim()
                 }
                 self?.isSelected = clicked
-                self?.sendActions(for: .valueChanged)
             }
             if animated {
                 shineLayer.startAnim()
@@ -110,7 +109,6 @@ public class WCLShineButton: UIControl {
         } else {
             clickLayer.clicked = !clickLayer.clicked
             isSelected = clickLayer.clicked
-            sendActions(for: .valueChanged)
         }
         
     }
