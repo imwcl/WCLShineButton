@@ -89,6 +89,29 @@ public class WCLShineButton: UIControl {
         initLayers()
     }
     
+    public func setClicked(_ clicked: Bool, animated: Bool = true) {
+        guard clicked != clickLayer.clicked else {
+            return
+        }
+        if clicked {
+            shineLayer.endAnim = { [weak self] in
+                self?.clickLayer.clicked = clicked
+                if animated {
+                    self?.clickLayer.startAnim()
+                }
+                self?.isSelected = clicked
+            }
+            if animated {
+                shineLayer.startAnim()
+            } else {
+                shineLayer.endAnim?()
+            }
+        } else {
+            clickLayer.clicked = !clickLayer.clicked
+            isSelected = clickLayer.clicked
+        }
+        
+    }
     
     //MARK: Override
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -98,11 +121,13 @@ public class WCLShineButton: UIControl {
                 self?.clickLayer.clicked = !(self?.clickLayer.clicked ?? false)
                 self?.clickLayer.startAnim()
                 self?.isSelected = self?.clickLayer.clicked ?? false
+                self?.sendActions(for: .valueChanged)
             }
             shineLayer.startAnim()
         }else {
             clickLayer.clicked = !clickLayer.clicked
             isSelected = clickLayer.clicked
+            sendActions(for: .valueChanged)
         }
     }
     
