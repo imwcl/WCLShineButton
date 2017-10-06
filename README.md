@@ -51,7 +51,7 @@ param1.smallShineColor = UIColor(rgb: (102,102,102))
 let bt1 = WCLShineButton(frame: .init(x: 100, y: 100, width: 60, height: 60), params: param1)
 bt1.fillColor = UIColor(rgb: (153,152,38))
 bt1.color = UIColor(rgb: (170,170,170))
-bt1.addTarget(self, action: #selector(action), for: .touchUpInside)
+bt1.addTarget(self, action: #selector(action), for: .valueChanged)
 view.addSubview(bt1)
 ```
 
