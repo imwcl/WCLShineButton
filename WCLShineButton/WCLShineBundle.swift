@@ -39,13 +39,14 @@ struct WCLShineBundle {
         return bundle!
     }
     
-    static func imageFromBundle(_ imageName: String) -> UIImage? {
+    static func imageFromBundle(_ imageName: String) -> UIImage {
         let bundle = Bundle(path: wclBundle.bundlePath + "/resource")
         if let path = bundle?.path(forResource: imageName, ofType: "png") {
-            let image = UIImage(contentsOfFile: path)
-            return image
+            if let image = UIImage(contentsOfFile: path) {
+                return image
+            }
         }
-        return nil
+        return UIImage()
     }
 }
 

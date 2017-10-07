@@ -11,7 +11,15 @@ import WCLShineButton
 
 class ViewController: UIViewController {
     
-    private var allButtons:[WCLShineButton] = []
+    @IBOutlet weak var btn1: WCLShineButton!
+    @IBOutlet weak var btn2: WCLShineButton!
+    @IBOutlet weak var btn3: WCLShineButton!
+    @IBOutlet weak var btn4: WCLShineButton!
+    @IBOutlet weak var btn5: WCLShineButton!
+    
+    private var allButtons: [WCLShineButton] {
+        return [btn1, btn2, btn3, btn4, btn5]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,58 +28,40 @@ class ViewController: UIViewController {
         var param1 = WCLShineParams()
         param1.bigShineColor = UIColor(rgb: (153,152,38))
         param1.smallShineColor = UIColor(rgb: (102,102,102))
-        let bt1 = WCLShineButton(frame: .init(x: 100, y: 100, width: 60, height: 60), params: param1)
-        bt1.isSelected = true
-        bt1.fillColor = UIColor(rgb: (153,152,38))
-        bt1.color = UIColor(rgb: (170,170,170))
-        bt1.addTarget(self, action: #selector(action(_:)), for: .valueChanged)
-        view.addSubview(bt1)
-        allButtons.append(bt1)
+        param1.animDuration = 1
+        btn1.params = param1
+        btn1.isSelected = true
         
         var param2 = WCLShineParams()
         param2.bigShineColor = UIColor(rgb: (255,95,89))
         param2.smallShineColor = UIColor(rgb: (216,152,148))
         param2.shineCount = 15
+        param2.animDuration = 2
         param2.smallShineOffsetAngle = -5
-        let bt2 = WCLShineButton(frame: .init(x: 200, y: 100, width: 60, height: 60), params: param2)
-        bt2.fillColor = UIColor(rgb: (255,95,89))
-        bt2.color = UIColor(rgb: (170,170,170))
-        bt2.image = .like
-        bt2.addTarget(self, action: #selector(action(_:)), for: .valueChanged)
-        view.addSubview(bt2)
-        allButtons.append(bt2)
+        btn2.params = param2
+        btn2.image = .like
         
         var param3 = WCLShineParams()
         param3.allowRandomColor = true
-        let bt3 = WCLShineButton(frame: .init(x: 300, y: 100, width: 60, height: 60), params: param3)
-        bt3.isSelected = true
-        bt3.fillColor = UIColor(rgb: (255,41,1))
-        bt3.color = UIColor(rgb: (170,170,170))
-        bt3.image = .smile
-        bt3.addTarget(self, action: #selector(action(_:)), for: .valueChanged)
-        view.addSubview(bt3)
-        allButtons.append(bt3)
+        param3.animDuration = 1
+        btn3.isSelected = true
+        btn3.params = param3
+        btn3.image = .smile
         
         var param4 = WCLShineParams()
         param4.enableFlashing = true
-        let bt4 = WCLShineButton(frame: .init(x: 400, y: 100, width: 60, height: 60), params: param4)
-        bt4.fillColor = UIColor(rgb: (167,99,154))
-        bt4.color = UIColor(rgb: (170,170,170))
-        bt4.image = .star
-        bt4.addTarget(self, action: #selector(action(_:)), for: .valueChanged)
-        view.addSubview(bt4)
-        allButtons.append(bt4)
+        param4.animDuration = 2
+        btn4.params = param4
+        btn4.image = .star
         
-        let toggleAllButton = UIButton(type: .custom)
-        toggleAllButton.frame = .init(x: 100, y: 200, width: 100, height: 60)
-        toggleAllButton.setTitleColor(.black, for: .normal)
-        toggleAllButton.setTitle("Toggle All", for: .normal)
-        toggleAllButton.backgroundColor = UIColor(rgb: (170,170,170))
-        toggleAllButton.addTarget(self, action: #selector(clickAll), for: .touchUpInside)
-        view.addSubview(toggleAllButton)
+        var param5 = WCLShineParams()
+        param5.bigShineColor = UIColor(rgb: (255, 195, 55))
+        btn5.image = .defaultAndSelect(#imageLiteral(resourceName: "collect"), #imageLiteral(resourceName: "collect#"))
+        btn5.params = param5
     }
     
-    @objc private func clickAll() {
+    
+    @IBAction func clickAll(_ sender: Any) {
         var delay = 0.0
         for btn in allButtons {
             DispatchQueue.main.asyncAfter(deadline: .now()+delay, execute: {
@@ -80,8 +70,8 @@ class ViewController: UIViewController {
             delay += 0.25
         }
     }
-    
-    @objc private func action(_ sender: WCLShineButton) {
+
+    @IBAction func action(_ sender: WCLShineButton) {
         print("Clicked \(sender.isSelected)")
     }
     

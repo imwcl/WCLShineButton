@@ -60,25 +60,58 @@ public struct WCLShineParams {
     public init() {}
 }
 
+/// 图片选择的枚举
+///
+/// - heart: 心形
+/// - like: 点赞
+/// - smile: 微笑
+/// - star: 星星
+/// - custom: 自定义图片
+/// - defaultAndSelect: 自定义默认和选中的图片
 public enum WCLShineImage {
+    
     case heart
     case like
     case smile
     case star
     case custom(UIImage)
-    func getImage() -> UIImage? {
+    case defaultAndSelect(UIImage, UIImage)
+    
+    func getImages() -> [UIImage] {
         switch self {
         case .heart:
-            return WCLShineBundle.imageFromBundle("heart")
+            return [WCLShineBundle.imageFromBundle("heart")]
         case .like:
-            return WCLShineBundle.imageFromBundle("like")
+            return [WCLShineBundle.imageFromBundle("like")]
         case .smile:
-            return WCLShineBundle.imageFromBundle("smile")
+            return [WCLShineBundle.imageFromBundle("smile")]
         case .star:
-            return WCLShineBundle.imageFromBundle("star")
+            return [WCLShineBundle.imageFromBundle("star")]
         case .custom(let image):
-            return image
-            
+            return [image]
+        case .defaultAndSelect(let defaultImage, let selectImage):
+            return [defaultImage, selectImage]
+        }
+    }
+    
+    func isDefaultAndSelect() -> Bool {
+        return self.getValue() == 5
+    }
+    
+    func getValue() -> Int {
+        switch self {
+        case .heart:
+            return 0
+        case .like:
+            return 1
+        case .smile:
+            return 2
+        case .star:
+            return 3
+        case .custom(_):
+            return 4
+        case .defaultAndSelect(_, _):
+            return 5
         }
     }
 }

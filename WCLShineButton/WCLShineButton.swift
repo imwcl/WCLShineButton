@@ -25,7 +25,7 @@
 
 import UIKit
 
-
+@IBDesignable
 public class WCLShineButton: UIControl {
     
     /// 更多的配置参数
@@ -37,14 +37,14 @@ public class WCLShineButton: UIControl {
     }
     
     /// 未点击的颜色
-    public var color: UIColor = UIColor.lightGray {
+    @IBInspectable public var color: UIColor = UIColor.lightGray {
         willSet {
             clickLayer.color = newValue
         }
     }
     
     /// 点击后的颜色
-    public var fillColor: UIColor   = UIColor(rgb: (255, 102, 102)) {
+    @IBInspectable public var fillColor: UIColor = UIColor(rgb: (255, 102, 102)) {
         willSet {
             clickLayer.fillColor = newValue
             shineLayer.fillColor = newValue
@@ -110,7 +110,6 @@ public class WCLShineButton: UIControl {
             clickLayer.clicked = clicked
             isSelected = clicked
         }
-        
     }
     
     //MARK: Override

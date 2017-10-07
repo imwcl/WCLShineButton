@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +18,139 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0V-sN-QYC" customClass="WCLShineButton" customModule="WCLShineButton">
+                                <rect key="frame" x="83.5" y="127.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8w9-fy-sxy"/>
+                                    <constraint firstAttribute="height" constant="60" id="KaV-iq-0VE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.59999999999999998" green="0.59607843137254901" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZE1-P0-5QD"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rys-Mc-53z" customClass="WCLShineButton" customModule="WCLShineButton">
+                                <rect key="frame" x="193.5" y="127.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bYT-Wc-LdZ"/>
+                                    <constraint firstAttribute="width" constant="60" id="wC6-AT-QtE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="valueChanged" id="1fc-7D-ld6"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dk-tO-MWm" customClass="WCLShineButton" customModule="WCLShineButton">
+                                <rect key="frame" x="303.5" y="127.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8jw-5w-kiH"/>
+                                    <constraint firstAttribute="height" constant="60" id="fmY-3a-ckI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.16078431372549018" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bq1-1g-pHc"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtg-sP-2n1" customClass="WCLShineButton" customModule="WCLShineButton">
+                                <rect key="frame" x="413.5" y="127.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HZK-ow-wW6"/>
+                                    <constraint firstAttribute="width" constant="60" id="doF-c9-TGT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.65490196078431373" green="0.38823529411764707" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDh-95-qNr"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0i-qi-bWP">
+                                <rect key="frame" x="299.5" y="248" width="68" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="4Nh-3V-Dbx"/>
+                                </constraints>
+                                <state key="normal" title="Toggle All"/>
+                                <connections>
+                                    <action selector="clickAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5D-Qg-bYQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAA-Cf-VYt" customClass="WCLShineButton" customModule="WCLShineButton">
+                                <rect key="frame" x="523.5" y="141" width="32" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="dNV-sx-Et5"/>
+                                    <constraint firstAttribute="width" constant="32" id="kaM-q7-TqL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.76470588235294112" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ip9-up-uQL"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X0i-qi-bWP" secondAttribute="bottom" constant="86" id="2LR-tD-uHP"/>
+                            <constraint firstItem="rys-Mc-53z" firstAttribute="leading" secondItem="W0V-sN-QYC" secondAttribute="trailing" constant="50" id="4JE-JE-sxT"/>
+                            <constraint firstItem="Vtg-sP-2n1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="CdK-KG-pby"/>
+                            <constraint firstItem="8Dk-tO-MWm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="H0T-dH-LeO"/>
+                            <constraint firstItem="LAA-Cf-VYt" firstAttribute="leading" secondItem="Vtg-sP-2n1" secondAttribute="trailing" constant="50" id="MUr-vi-lqv"/>
+                            <constraint firstItem="Vtg-sP-2n1" firstAttribute="leading" secondItem="8Dk-tO-MWm" secondAttribute="trailing" constant="50" id="RF5-67-dBb"/>
+                            <constraint firstItem="rys-Mc-53z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="Ss3-kt-fud"/>
+                            <constraint firstItem="W0V-sN-QYC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="V4K-09-MzX"/>
+                            <constraint firstItem="8Dk-tO-MWm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XaM-3E-O1K"/>
+                            <constraint firstItem="LAA-Cf-VYt" firstAttribute="centerY" secondItem="Vtg-sP-2n1" secondAttribute="centerY" id="Y4D-hl-zTB"/>
+                            <constraint firstItem="X0i-qi-bWP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhO-np-d5u"/>
+                            <constraint firstItem="8Dk-tO-MWm" firstAttribute="leading" secondItem="rys-Mc-53z" secondAttribute="trailing" constant="50" id="xIH-6j-U6b"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="W0V-sN-QYC" id="NVR-eZ-IND"/>
+                        <outlet property="btn2" destination="rys-Mc-53z" id="3Gx-DK-a0z"/>
+                        <outlet property="btn3" destination="8Dk-tO-MWm" id="eml-i5-3zT"/>
+                        <outlet property="btn4" destination="Vtg-sP-2n1" id="Eg4-pk-jrJ"/>
+                        <outlet property="btn5" destination="LAA-Cf-VYt" id="nxj-BZ-YAu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="115.59220389805098" y="117.59999999999999"/>
         </scene>
     </scenes>
 </document>

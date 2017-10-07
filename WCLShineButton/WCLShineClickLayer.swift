@@ -33,7 +33,13 @@ class WCLShineClickLayer: CALayer {
     
     var image: WCLShineImage = .heart {
         didSet {
-            maskLayer.contents = image.getImage()?.cgImage
+            if image.isDefaultAndSelect() {
+                mask     = nil
+                contents = image.getImages().first?.cgImage
+            }else {
+                maskLayer.contents = image.getImages().first?.cgImage
+                mask = maskLayer
+            }
         }
     }
     
@@ -41,10 +47,19 @@ class WCLShineClickLayer: CALayer {
     
     var clicked: Bool = false {
         didSet {
-            if clicked {
-                backgroundColor = fillColor.cgColor
+            if image.isDefaultAndSelect() {
+                backgroundColor = UIColor.clear.cgColor
+                if clicked {
+                    contents = image.getImages().last?.cgImage
+                }else {
+                    contents = image.getImages().first?.cgImage
+                }
             }else {
-                backgroundColor = color.cgColor
+                if clicked {
+                    backgroundColor = fillColor.cgColor
+                }else {
+                    backgroundColor = color.cgColor
+                }
             }
         }
     }
@@ -57,33 +72,26 @@ class WCLShineClickLayer: CALayer {
         anim.duration  = animDuration
         anim.values = [0.4, 1, 0.9, 1]
         anim.calculationMode = kCAAnimationCubic
-        maskLayer.add(anim, forKey: "scale")
+        if image.isDefaultAndSelect() {
+            add(anim, forKey: "scale")
+        }else {
+            maskLayer.add(anim, forKey: "scale")
+        }
     }
     
     //MARK: Override
     override func layoutSublayers() {
-        maskLayer.frame = bounds
-        if clicked {
-            backgroundColor = fillColor.cgColor
+        if image.isDefaultAndSelect() {
+            backgroundColor = UIColor.clear.cgColor
         }else {
-            backgroundColor = color.cgColor
+            maskLayer.frame = bounds
+            maskLayer.contents = image.getImages().first?.cgImage
+            mask = maskLayer
+            if clicked {
+                backgroundColor = fillColor.cgColor
+            }else {
+                backgroundColor = color.cgColor
+            }
         }
-        maskLayer.contents = image.getImage()?.cgImage
-    }
-    
-    
-    //MARK: Initial Methods
-    override init() {
-        super.init()
-        mask = maskLayer
-    }
-    
-    override init(layer: Any) {
-        super.init(layer: layer)
-        mask = maskLayer
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
