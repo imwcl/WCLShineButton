@@ -26,7 +26,7 @@
 
 使用 Carthage 安装：
 
-1. 在`Cartfile`中添加`github "631106979/WCLShineButton"`；
+1. 在`Cartfile`中添加`github "imwcl/WCLShineButton"`；
 2. 执行`carthage update`；
 3. 导入`WCLShineButton.framework`。
 
