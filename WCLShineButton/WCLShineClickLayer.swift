@@ -71,7 +71,7 @@ class WCLShineClickLayer: CALayer {
         let anim = CAKeyframeAnimation(keyPath: "transform.scale")
         anim.duration  = animDuration
         anim.values = [0.4, 1, 0.9, 1]
-        anim.calculationMode = kCAAnimationCubic
+        anim.calculationMode = CAAnimationCalculationMode.cubic
         if image.isDefaultAndSelect() {
             add(anim, forKey: "scale")
         }else {

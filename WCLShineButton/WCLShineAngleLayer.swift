@@ -76,7 +76,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         }
         let angleAnim = CABasicAnimation(keyPath: "transform.rotation")
         angleAnim.duration = params.animDuration * 0.87
-        angleAnim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        angleAnim.timingFunction = CAMediaTimingFunction(name: .linear)
         angleAnim.fromValue = 0
         angleAnim.toValue = CGFloat(params.shineTurnAngle)*CGFloat(Double.pi)/180
         angleAnim.delegate = self
@@ -94,7 +94,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         }else {
             displaylink?.frameInterval = 6
         }
-        displaylink?.add(to: .current, forMode: .commonModes)
+        displaylink?.add(to: .current, forMode: .common)
     }
     
     private func addShines() {
@@ -145,9 +145,9 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         let center = getShineCenter(angle: angle, radius: radius)
         let path = UIBezierPath(arcCenter: center, radius: 0.1, startAngle: 0, endAngle: CGFloat(Double.pi)*2, clockwise: false)
         anim.toValue = path.cgPath
-        anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        anim.timingFunction = CAMediaTimingFunction(name: .easeOut)
         anim.isRemovedOnCompletion = false
-        anim.fillMode = kCAFillModeForwards
+        anim.fillMode = .forwards
         return anim
     }
     
@@ -160,7 +160,7 @@ class WCLShineAngleLayer: CALayer, CAAnimationDelegate {
         flash.repeatCount = MAXFLOAT
         flash.isRemovedOnCompletion = false
         flash.autoreverses = true
-        flash.fillMode = kCAFillModeForwards
+        flash.fillMode = .forwards
         return flash
     }
     
