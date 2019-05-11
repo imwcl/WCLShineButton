@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "WCLShineButton"
-  s.version       = "1.0.7"
+  s.version       = "1.0.8"
   s.summary       = "This is a UI lib for iOS. Effects like shining."
   s.homepage      = "https://github.com/631106979/WCLShineButton"
   s.license       = 'MIT'
@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
   s.resources     = 'WCLShineButton/WCLShineButton.bundle'
   s.frameworks    = "UIKit"
   s.requires_arc  = true
+  s.swift_versions = '5.0'
 
 end
