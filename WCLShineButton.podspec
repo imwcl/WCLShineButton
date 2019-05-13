@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license       = 'MIT'
   s.author        = { "W_C__L" => "wangchonglei93@icloud.com" }
   s.platform      = :ios, "8.0" 
-  s.source        = { :git => "https://github.com/631106979/WCLShineButton.git", :tag => "1.0.7" }
+  s.source        = { :git => "https://github.com/631106979/WCLShineButton.git", :tag => s.version.to_s }
   s.source_files  = 'WCLShineButton/*.{swift}'
   s.resources     = 'WCLShineButton/WCLShineButton.bundle'
   s.frameworks    = "UIKit"
