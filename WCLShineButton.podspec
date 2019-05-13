@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.resources     = 'WCLShineButton/WCLShineButton.bundle'
   s.frameworks    = "UIKit"
   s.requires_arc  = true
-  s.swift_version = '5.0'
+# s.swift_version = '5.0'
 
 end
