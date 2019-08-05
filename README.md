@@ -84,6 +84,11 @@ view.addSubview(bt1)
 
 [ShineButton](https://github.com/ChadCSong/ShineButton)
 
+## Third Party Bindings
+
+### React Native
+You may now use this library with [React Native](https://github.com/facebook/react-native) via the module [here](https://github.com/prscX/react-native-shine-button)
+
 ## **License**
 
 WCLShineButton is released under the [MIT license](https://github.com/631106979/WCLShineButton/blob/master/LICENSE). See LICENSE for details.
