@@ -167,3 +167,4 @@ public class WCLShineButton: UIControl {
         layer.addSublayer(shineLayer)
     }
 }
+
