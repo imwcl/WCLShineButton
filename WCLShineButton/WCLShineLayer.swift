@@ -50,9 +50,9 @@ class WCLShineLayer: CALayer, CAAnimationDelegate {
         let toPath = UIBezierPath(arcCenter: CGPoint.init(x: size.width/2, y: size.height/2), radius: size.width/2 * CGFloat(params.shineDistanceMultiple), startAngle: 0, endAngle: CGFloat(Double.pi) * 2.0, clockwise: false).cgPath
         anim.delegate = self
         anim.values = [fromPath, toPath]
-        anim.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
+        anim.timingFunctions = [CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)]
         anim.isRemovedOnCompletion = false
-        anim.fillMode = kCAFillModeForwards
+        anim.fillMode = CAMediaTimingFillMode.forwards
         shapeLayer.add(anim, forKey: "path")
         if params.enableFlashing {
             startFlash()
@@ -90,7 +90,7 @@ class WCLShineLayer: CALayer, CAAnimationDelegate {
         }else {
             displaylink?.frameInterval = 10
         }
-        displaylink?.add(to: .current, forMode: .commonModes)
+        displaylink?.add(to: .current, forMode: RunLoop.Mode.common)
     }
     
     @objc private func flashAction() {
